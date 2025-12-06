@@ -4,3 +4,57 @@ GET {{DotnetPgDemo.Api_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
+
+POST {{DotnetPgDemo.Api_HostAddress}}/api/people/
+Content-Type: application/json
+
+{
+    "Firstname": "jensen",
+    "Lastname": "peng"
+}
+
+###
+
+GET {{DotnetPgDemo.Api_HostAddress}}/api/people/
+
+###
+GET {{DotnetPgDemo.Api_HostAddress}}/api/people/GetPerson
+
+
+
+###
+
+GET {{DotnetPgDemo.Api_HostAddress}}/api/people/1
+
+###
+GET {{DotnetPgDemo.Api_HostAddress}}/api/people/GetPerson/5
+
+
+###
+GET {{DotnetPgDemo.Api_HostAddress}}/api/people/10
+
+###
+
+PUT {{DotnetPgDemo.Api_HostAddress}}/api/people/5
+Content-Type: application/json
+
+{
+    "Id": 5,
+    "Firstname": "jigntong",
+    "Lastname": "peng"
+}
+
+###
+
+PUT {{DotnetPgDemo.Api_HostAddress}}/api/people/6
+Content-Type: application/json
+
+{
+    "Id": 6,
+    "Firstname": "jensen",
+    "Lastname": "peng"
+}
+
+###
+
+DELETE {{DotnetPgDemo.Api_HostAddress}}/api/people/3
