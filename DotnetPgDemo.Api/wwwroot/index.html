@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Approval System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Order Approval Dashboard</h1>
+            <div class="user-controls">
+                <label for="userSelect">Current User:</label>
+                <select id="userSelect">
+                    <option value="">Loading users...</option>
+                </select>
+                <span id="userInfo" style="font-size: 12px; color: #666;"></span>
+            </div>
+        </header>
+
+        <div id="ordersList" class="orders-grid">
+            <!-- Orders will be populated here -->
+            <div style="grid-column: 1/-1; text-align: center; padding: 40px;">Loading orders...</div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
