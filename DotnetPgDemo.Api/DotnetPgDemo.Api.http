@@ -58,3 +58,7 @@ Content-Type: application/json
 ###
 
 DELETE {{DotnetPgDemo.Api_HostAddress}}/api/people/3
+
+###
+
+POST {{DotnetPgDemo.Api_HostAddress}}/api/WordImage/process?title=My%20Document&width=150&height=50
